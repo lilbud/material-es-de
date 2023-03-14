@@ -17,6 +17,6 @@
             <pillarboxThreshold>0.85 0.90</pillarboxThreshold>
             <delay>1.5</delay>
             <scrollFadeIn>true</scrollFadeIn>
-		</image>
+		</video>
 	</view>
 </theme>
