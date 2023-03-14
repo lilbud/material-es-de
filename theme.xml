@@ -41,12 +41,14 @@
 			<staticImage>${systemLogo}</staticImage>
 			<imageInterpolation>linear</imageInterpolation>
 			<unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+			<pos>0 0.383796</pos>
+            <size>1 0.232407</size>
 		</carousel>
 
 		<text name="gameCounter">
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.6437</pos>
-			<size>1 0.056</size>
+            <size>1 0.056</size>
 			<systemdata>gamecount</systemdata>
 			<fontSize>0.035</fontSize>
 			<horizontalAlignment>center</horizontalAlignment>
