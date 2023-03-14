@@ -13,10 +13,11 @@
 	<variant name="Detailed">
 		<label>Detailed</label>
 		<selectable>true</selectable>
-		<!-- <override>
+		<override>
 			<trigger>noMedia</trigger>
+			<mediaType>miximage, marquee, screenshot, titlescreen, cover, backcover, 3dbox, physicalmedia, fanart, video</mediaType>
 			<useVariant>Basic</useVariant>
-		</override> -->
+		</override>
 	</variant>
 
 	<variant name="Basic">

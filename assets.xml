@@ -5,9 +5,8 @@
         <variables>
             <gamelistBackgroundColor>424242</gamelistBackgroundColor>
             <gamelistColor>cecece</gamelistColor>
-            <gamelistSelectedColor>424242</gamelistSelectedColor>
+            <gamelistSelectedColor>ffffff</gamelistSelectedColor>
         </variables>
-
     </colorScheme>
 
     <colorScheme name="light">
@@ -22,10 +21,6 @@
         <variables>
             <systemColor>${systemColor}</systemColor>
             <gamelistHelpColor>FFFFFF</gamelistHelpColor>
-            <mainFont>./../assets/Roboto-Regular.ttf</mainFont>
-            <gamelistLogo>./../assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
-            <systemLogo>./../assets/system_logos/${system.theme}.svg</systemLogo>
-            <box>./../assets/box.png</box>
         </variables>
     </colorScheme>
     
