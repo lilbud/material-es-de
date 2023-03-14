@@ -21,7 +21,7 @@
 
 	<variant name="Basic">
 		<label>Basic</label>
-		<selectable>true</selectable>
+		<selectable>false</selectable>
 	</variant>
 
 	<transitions name="transitions">
