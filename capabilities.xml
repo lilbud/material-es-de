@@ -9,16 +9,6 @@
 	<colorScheme name="light">
 		<label>Light mode</label>
 	</colorScheme>
-
-	<variant name="Detailed">
-		<label>Detailed</label>
-		<selectable>false</selectable>
-		<override>
-			<trigger>noMedia</trigger>
-			<mediaType>miximage, marquee, screenshot, titlescreen, cover, backcover, 3dbox, physicalmedia, fanart, video</mediaType>
-			<useVariant>Basic</useVariant>
-		</override>
-	</variant>
 	
 	<variant name="Video">
 		<label>Video</label>
@@ -27,6 +17,16 @@
 			<trigger>noMedia</trigger>
 			<mediaType>video</mediaType>
 			<useVariant>Detailed</useVariant>
+		</override>
+	</variant>
+
+	<variant name="Detailed">
+		<label>Detailed</label>
+		<selectable>false</selectable>
+		<override>
+			<trigger>noMedia</trigger>
+			<mediaType>miximage, marquee, screenshot, titlescreen, cover, backcover, 3dbox, physicalmedia, fanart</mediaType>
+			<useVariant>Basic</useVariant>
 		</override>
 	</variant>
 
