@@ -22,10 +22,10 @@
         <variables>
             <systemColor>${systemColor}</systemColor>
             <gamelistHelpColor>FFFFFF</gamelistHelpColor>
-            <mainFont>./assets/Roboto-Regular.ttf</mainFont>
-            <gamelistLogo>./assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
-            <systemLogo>./assets/system_logos/${system.theme}.svg</systemLogo>
-            <box>./assets/box.png</box>
+            <mainFont>./../assets/Roboto-Regular.ttf</mainFont>
+            <gamelistLogo>./../assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
+            <systemLogo>./../assets/system_logos/${system.theme}.svg</systemLogo>
+            <box>./../assets/box.png</box>
         </variables>
     </colorScheme>
     
