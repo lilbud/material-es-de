@@ -12,7 +12,7 @@
 
 	<variant name="Detailed">
 		<label>Detailed</label>
-		<selectable>true</selectable>
+		<selectable>false</selectable>
 		<override>
 			<trigger>noMedia</trigger>
 			<mediaType>miximage, marquee, screenshot, titlescreen, cover, backcover, 3dbox, physicalmedia, fanart, video</mediaType>
