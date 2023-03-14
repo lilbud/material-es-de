@@ -1,0 +1,32 @@
+<theme>
+    <include>./assets/colors/${system.theme}.xml</include>
+    
+    <colorScheme name="dark">
+        <variables>
+            <gamelistBackgroundColor>424242</gamelistBackgroundColor>
+            <gamelistColor>cecece</gamelistColor>
+            <gamelistSelectedColor>424242</gamelistSelectedColor>
+        </variables>
+
+    </colorScheme>
+
+    <colorScheme name="light">
+        <variables>
+            <gamelistBackgroundColor>cecece</gamelistBackgroundColor>
+            <gamelistColor>424242</gamelistColor>
+            <gamelistSelectedColor>cecece</gamelistSelectedColor>
+        </variables>
+    </colorScheme>
+
+    <colorScheme name="light, dark">
+        <variables>
+            <systemColor>${systemColor}</systemColor>
+            <gamelistHelpColor>FFFFFF</gamelistHelpColor>
+            <mainFont>./assets/Roboto-Regular.ttf</mainFont>
+            <gamelistLogo>./assets/gamelist_logos/${system.theme}.svg</gamelistLogo>
+            <systemLogo>./assets/system_logos/${system.theme}.svg</systemLogo>
+            <box>./assets/box.png</box>
+        </variables>
+    </colorScheme>
+    
+</theme>

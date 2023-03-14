@@ -1,0 +1,29 @@
+<themeCapabilities>
+
+   <themeName>Material Theme</themeName>
+
+   <colorScheme name="dark">
+      <label>Dark mode</label>
+   </colorScheme>
+
+   <colorScheme name="light">
+      <label>Light mode</label>
+   </colorScheme>
+
+   <transitions name="transitions">
+      <label>transitions</label>
+      <selectable>false</selectable>
+      <systemToSystem>instant</systemToSystem>
+      <systemToGamelist>instant</systemToGamelist>
+      <gamelistToGamelist>instant</gamelistToGamelist>
+      <gamelistToSystem>instant</gamelistToSystem>
+      <startupToSystem>instant</startupToSystem>
+      <startupToGamelist>instant</startupToGamelist>
+   </transitions>
+   <suppressTransitionProfiles>
+      <entry>builtin-instant</entry>
+      <entry>builtin-slide</entry>
+      <entry>builtin-fade</entry>
+   </suppressTransitionProfiles>
+
+</themeCapabilities>

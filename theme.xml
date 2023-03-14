@@ -1,0 +1,88 @@
+<theme>
+    <include>./assets.xml</include>
+
+    <view name="system,gamelist">
+        
+        <helpsystem name="help">
+            <textColor>ffffff</textColor>
+            <iconColor>ffffff</iconColor>
+            <textColorDimmed>ffffff</textColorDimmed>
+            <iconColorDimmed>ffffff</iconColorDimmed>
+            <origin>0.5 0</origin>
+            <pos>0.5 0.9515</pos>
+        </helpsystem>
+
+        <image name="background">
+            <pos>0 0</pos>
+            <size>1 1</size>
+            <path>${box}</path>
+            <color>${systemColor}</color>
+            <zIndex>0</zIndex>
+        </image>
+    
+    </view>
+
+    <view name="system">
+
+        <carousel name="systemCarousel">
+            <type>horizontal</type>
+            <staticImage>${systemLogo}</staticImage>
+            <imageInterpolation>linear</imageInterpolation>
+            <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+        </carousel>
+
+        <text name="gameCounter">
+            <origin>0.5 0.5</origin>
+            <pos>0.5 0.6437</pos>
+            <size>1 0.056</size>
+            <systemdata>gamecount</systemdata>
+            <fontSize>0.035</fontSize>
+            <horizontalAlignment>center</horizontalAlignment>
+            <backgroundColor>FFFFFFBB</backgroundColor>
+            <letterCase>uppercase</letterCase>
+            <zIndex>50</zIndex>
+        </text>
+
+    </view>
+
+    <view name="gamelist">
+
+        <image name="overlay">
+            <pos>0 0.16</pos>
+            <size>1 0.775</size>
+            <path>${box}</path>
+            <color>${gamelistBackgroundColor}</color>
+            <zIndex>1</zIndex>
+        </image>
+
+        <image name="logo">
+            <path>${gamelistLogo}</path>
+            <pos>0.5 0.08</pos>
+            <origin>0.5 0.5</origin>
+			<maxSize>0.55 0.1</maxSize>
+            <zIndex>45</zIndex>
+        </image>
+
+        <textlist name="gamelist">
+            <selectorColor>${systemColor}</selectorColor>
+			<fontPath>${mainFont}</fontPath>
+            <selectedColor>${gamelistSelectedColor}</selectedColor>
+            <primaryColor>${gamelistColor}</primaryColor>
+            <secondaryColor>${gamelistColor}</secondaryColor>
+			<fontSize>0.03</fontSize>
+			<pos>0.550 0.28</pos>
+			<size>0.360 0.50</size>
+			<horizontalMargin>0.01</horizontalMargin>
+        </textlist>
+
+        <image name="md_image">
+            <imageType>image</imageType>
+			<pos>0.30 0.53</pos>
+			<maxSize>0.500 0.501</maxSize>
+			<origin>0.5 0.5</origin>
+            <zIndex>2</zIndex>
+		</image>
+
+    </view>
+
+</theme>
