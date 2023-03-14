@@ -1,0 +1,22 @@
+<theme>
+	<view name="gamelist">
+		<textlist name="gamelist">	
+			<pos>0.550 0.28</pos>
+			<size>0.360 0.50</size>
+			<horizontalAlignment>left</horizontalAlignment>
+		</textlist>
+
+		<video name="gameVideo">
+			<imageType>image</imageType>
+			<pos>0.30 0.53</pos>
+			<maxSize>0.500 0.501</maxSize>
+			<origin>0.5 0.5</origin>
+			<zIndex>2</zIndex>
+			<interpolation>linear</interpolation>
+			<pillarboxes>false</pillarboxes>
+            <pillarboxThreshold>0.85 0.90</pillarboxThreshold>
+            <delay>1.5</delay>
+            <scrollFadeIn>true</scrollFadeIn>
+		</image>
+	</view>
+</theme>

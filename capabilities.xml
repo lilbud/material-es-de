@@ -19,6 +19,16 @@
 			<useVariant>Basic</useVariant>
 		</override>
 	</variant>
+	
+	<variant name="Video">
+		<label>Video</label>
+		<selectable>false</selectable>
+		<override>
+			<trigger>noMedia</trigger>
+			<mediaType>video</mediaType>
+			<useVariant>Detailed</useVariant>
+		</override>
+	</variant>
 
 	<variant name="Basic">
 		<label>Basic</label>
