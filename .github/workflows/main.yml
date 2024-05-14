@@ -1,5 +1,3 @@
-# This is a basic workflow to help you get started with Actions
-
 name: Grab Latest Assets
 
 # Controls when the workflow will run
@@ -10,11 +8,15 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+# Uncomment the different lines based on what your theme needs asset-wise.
+# MAKE SURE TO CHANGE THE PATH LISTED TO MATCH YOUR THEME'S STRUCTURE
+
 env:
   WhiteLogoDir: ./assets/gamelist_logos
   ColorLogoDir: ./assets/system_logos
+  # ControllerDir: ./assets/img/controllers
   MetadataDir: ./assets/colors
-  
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   update-assets:
@@ -26,25 +28,40 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
 
-      # Clones newest logos from the Gitlab Repo and copies to proper folders
-      - name: grab new logos and copy to specified folders
-        run: |
-          git clone "https://gitlab.com/es-de/themes/system-logos.git"
-          cp -r ./system-logos/system-logo-white/. $WhiteLogoDir
-          cp -r ./system-logos/system-logo-color/. $ColorLogoDir
-      
-      # Clones newest system-metadata from the Gitlab Repo and copy to proper folder
+      # Clones newest logos from the Gitlab Repo
       - name: grab new logos
-        run: |
-          git clone "https://gitlab.com/es-de/themes/system-metadata"
-          cp -r ./system-metadata/. $MetadataDir
+        run: git clone "https://gitlab.com/es-de/themes/system-logos.git"
+
+      # Clones newest system-controllers from the Gitlab Repo
+      # - name: grab controller outlines
+      #   run: git clone "https://gitlab.com/es-de/themes/system-controllers-outline.git"
+        
+      # Clones newest system-metadata from the Gitlab Repo
+      - name: grab system metadata
+        run: git clone "https://gitlab.com/es-de/themes/system-metadata.git"
+          
+      # copy white logos to proper folders if needed
+      - name: copy white logos
+        run: cp -r ./system-logos/system-logo-white/. $WhiteLogoDir
+          
+      # copy color logos to proper folders if needed
+      - name: copy color logos
+        run: cp -r ./system-logos/system-logo-color/. $ColorLogoDir
+
+      # copy controllers to proper folders if needed
+      # - name: copy controllers
+      #   run: cp -r ./system-controllers-outline/. $ControllerDir
+      
+      # copy metadata to proper folders if needed
+      - name: copy metadata
+        run: cp -r ./system-metadata/. $MetadataDir
 
       # remove cloned folders
       - name: remove clones
         run: |
           rm -rf ./system-logos
+          rm -rf ./system-controllers-outline
           rm -rf ./system-metadata
-
       - name: Commit
         run: |
           git config --local user.name "${GITHUB_ACTOR}"
